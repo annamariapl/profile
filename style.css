@@ -44,8 +44,8 @@ a:hover{
 
 /* First simple components */
 
-.container{
-  width: 500px;
+.container-fluid{
+  width: 90%;
   margin: 30px auto;
 }
 .card{
@@ -100,4 +100,51 @@ a:hover{
 }
 #movies td{
   padding: 10px;
+}
+
+/* Fixed sidebar layout */
+
+#content{
+  margin-left: 120px;
+}
+
+#sidebar {
+  background-color: #384047;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 120px;
+  text-align: center;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#sidebar li {
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+
+#sidebar a {
+  text-decoration: none;
+  font-size: 25px;
+  color:#788188;
+}
+
+#sidebar a:hover {
+  color: white;
+}
+
+/* Responsive layout behavior */
+
+@media (max-width: 768px) {
+  #content{
+    margin-left: 0px;
+  }
+  #sidebar {
+    display: none;
+  }
 }
